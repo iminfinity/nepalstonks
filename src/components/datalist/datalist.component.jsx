@@ -1,5 +1,3 @@
-import {useEffect, useState} from "react";
-
 import {useStock} from "../../data/stockContext";
 
 import "./datalist.styles.scss";
