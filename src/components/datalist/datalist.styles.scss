@@ -1,0 +1,14 @@
+.data-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0.8rem;
+
+  input {
+    height: 2.4rem;
+    outline: none;
+    padding-left: 0.2rem;
+    &::-webkit-calendar-picker-indicator {
+      display: none;
+    }
+  }
+}

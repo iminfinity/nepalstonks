@@ -1,26 +1,28 @@
 import {Line} from "react-chartjs-2";
-import data from "./data.json";
+import {useStock} from "../../data/stockContext";
+
 import "./line-chart.styles.scss";
 const LineChart = () => {
+    const {currentStockData} = useStock()
     return(
         <section className="line-chart">
         <Line
             data={{
-                labels: data.date,
+                labels: currentStockData.date,
                 datasets: [
                     {
                         label: 'Max price',
-                        data: data.maxPrice,
+                        data: currentStockData.maxPrice,
                         borderColor: "red"
                     },
                     {
                         label: 'Min price',
-                        data: data.minPrice,
+                        data: currentStockData.minPrice,
                         borderColor: "green"
                     },
                     {
                         label: 'Closing price',
-                        data: data.closingPrice,
+                        data: currentStockData.closingPrice,
                         borderColor: "blue"
                     },
                 ] 

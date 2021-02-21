@@ -1,0 +1,14 @@
+.content {
+  height: 92vh;
+  display: grid;
+  grid-template-columns: 70% 30%;
+
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
