@@ -1,0 +1,20 @@
+.page-header {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  svg {
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .premium {
+    padding-right: 0.7rem;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    &:hover {
+      color: rgba(0, 0, 0, 1);
+    }
+  }
+}
