@@ -15,13 +15,15 @@ const StockDataProvider = ({ children }) => {
   useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_API_URL}stock-list`)
-      .then((response) => setStockList(response.data));
+      .then((response) => setStockList(response.data))
+      .catch(() => console.log("Loading"));
   }, []);
 
   useEffect(() => {
     axios
       .get(`${process.env.REACT_APP_API_URL}stock-data/${currentStock}`)
-      .then((response) => setCurrentStockData(response.data.stockData));
+      .then((response) => setCurrentStockData(response.data.stockData))
+      .catch(() => console.log("Loading"));
   }, [currentStock]);
 
   const updateCurrentStock = (stock) => {
