@@ -6,12 +6,15 @@ import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
 
 import StockDataProvider from "./data/stockContext";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <StockDataProvider>
-      <App />
-    </StockDataProvider>
+    <BrowserRouter>
+      <StockDataProvider>
+        <App />
+      </StockDataProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

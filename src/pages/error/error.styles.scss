@@ -1,0 +1,16 @@
+.error-page {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background-color: #f4aaaa;
+  img {
+    user-select: none;
+    -webkit-user-drag: none;
+    transition: transform 400ms ease-in-out;
+    &:hover {
+      transform: scale(0.5);
+    }
+  }
+}

@@ -26,7 +26,7 @@ const StockDataProvider = ({ children }) => {
       axios
         .get(`${process.env.REACT_APP_API_URL}stock-data/${stock}`)
         .then((response) => setCurrentStockData(response.data.stockData))
-        .catch((error) => console.log(error.type));
+        .catch(() => console.log("Loading"));
     }
   }, [currentStock]);
 

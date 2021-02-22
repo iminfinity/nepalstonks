@@ -1,14 +1,18 @@
-import Header from "./components/header/header.component";
-import Content from "./components/content/content.component";
+import Home from "../src/pages/home/home";
+import Profile from "../src/pages/profile/profile";
+
+import { Route, Switch } from "react-router-dom";
 
 import "./App.scss";
+import Error from "./pages/error/error";
 
 function App() {
   return (
-    <div className="app">
-      <Header />
-      <Content />
-    </div>
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/profile" component={Profile} />
+      <Route component={Error} />
+    </Switch>
   );
 }
 
