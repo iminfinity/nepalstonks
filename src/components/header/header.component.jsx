@@ -5,6 +5,7 @@ const Header = () => {
     return(
         <header className="page-header">
             <Logo />
+            <h4>In development</h4>
             <div className="premium">
                 <span> Get Premium</span>
             </div>

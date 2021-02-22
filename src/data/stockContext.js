@@ -20,10 +20,14 @@ const StockDataProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    axios
-      .get(`${process.env.REACT_APP_API_URL}stock-data/${currentStock}`)
-      .then((response) => setCurrentStockData(response.data.stockData))
-      .catch(() => console.log("Loading"));
+    if (currentStock.length > 2) {
+      let stock = currentStock.replace("/", "-");
+      stock = stock.replace(" ", "");
+      axios
+        .get(`${process.env.REACT_APP_API_URL}stock-data/${stock}`)
+        .then((response) => setCurrentStockData(response.data.stockData))
+        .catch((error) => console.log(error.type));
+    }
   }, [currentStock]);
 
   const updateCurrentStock = (stock) => {
