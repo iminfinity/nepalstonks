@@ -1,5 +1,7 @@
 .profile {
-  height: 100vh;
+  height: 92vh;
   width: 100vw;
   overflow: hidden;
+  display: grid;
+  grid-template-columns: 30% 70%;
 }

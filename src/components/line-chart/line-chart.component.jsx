@@ -14,7 +14,7 @@ const LineChart = () => {
                         label: 'Max price',
                         data: currentStockData.maxPrice,
                         borderColor: "red",
-                        backgroundColor: "rgba(240,0,0,.1)"
+                        backgroundColor: "rgba(240,0,0,.1)",
                     },
                     {
                         label: 'Min price',

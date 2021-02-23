@@ -1,15 +1,18 @@
 import Header from "../../components/header/header.component";
+import Menu from "../../components/menu/menu.component";
+import MainContent from "../../components/main-content/main-content.component";
 
 import "./profile.styles.scss";
 
 const Profile = () => {
     return(
-        <div className="profile">
+        <>
             <Header />
-            <h1>
-                Profile
-            </h1>
-        </div>
+            <main className="profile">
+                <Menu />
+                <MainContent />
+            </main>
+        </>
     )
 }
 

@@ -4,12 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  h4 {
-    color: whitesmoke;
-    letter-spacing: 0.8rem;
-    font-size: 1.2rem;
-    text-align: center;
-  }
+
   svg {
     height: 100%;
     cursor: pointer;
@@ -17,6 +12,10 @@
       path {
         fill: whitesmoke;
       }
+    }
+
+    &.in-dev {
+      padding: 5px 0;
     }
   }
   .premium {
