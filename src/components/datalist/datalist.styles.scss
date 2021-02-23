@@ -7,6 +7,9 @@
     height: 2.4rem;
     outline: none;
     padding-left: 0.2rem;
+    border: 1px solid rgba(22, 230, 219, 0.541);
+    background-color: rgba(39, 36, 36, 0.794);
+    color: rgba(255, 255, 255, 0.863);
     &::-webkit-calendar-picker-indicator {
       display: none;
     }

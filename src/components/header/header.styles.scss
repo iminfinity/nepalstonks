@@ -4,17 +4,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  h4 {
+    color: whitesmoke;
+    letter-spacing: 0.8rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
   svg {
     height: 100%;
     cursor: pointer;
+    &:hover {
+      path {
+        fill: whitesmoke;
+      }
+    }
   }
-
   .premium {
     padding-right: 0.7rem;
-    color: rgba(0, 0, 0, 0.6);
+    color: rgba(240, 240, 240, 0.6);
     cursor: pointer;
     &:hover {
-      color: rgba(0, 0, 0, 1);
+      color: rgba(240, 240, 240, 0.9);
     }
   }
 }
