@@ -1,6 +1,6 @@
 import "./header.styles.scss";
 import {ReactComponent as Logo} from "../../assets/nepalstonks-logo.svg";
-import {ReactComponent as InDev} from "../../assets/development.svg";
+// import {ReactComponent as InDev} from "../../assets/development.svg";
 
 const Header = () => {
     return(
