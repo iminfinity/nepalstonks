@@ -6,10 +6,10 @@ const Header = () => {
     return(
         <header className="page-header">
             <Logo />
-            <InDev title="In development" className="in-dev" />
-            <div className="premium">
+            {/* <InDev title="In development" className="in-dev" /> */}
+            {/* <div className="premium">
                 <span> Get Premium</span>
-            </div>
+            </div> */}
         </header>
     )
 }
